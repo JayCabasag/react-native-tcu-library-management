@@ -10,7 +10,12 @@ import React from 'react';
 const BookPreviewBottomSheet = ({navigation, showBookPreview, handleToggleBookPreview, data}) => {
   
   const bookPdfFileUrl = data?.file ?? 'https://img.freepik.com/free-vector/error-404-concept-landing-page_52683-20173.jpg?w=826&t=st=1668346268~exp=1668346868~hmac=5d21ce308f30b531b082dd8a99245f4f5f425066e966140b8ac11e696e5bd064'
-  
+
+  const source = {
+    uri: data?.file ?? '',
+    cache: true,
+  };
+
   const [showPdfReader, setShowPdfReader] = React.useState(false)
   const handleOpenPdfReader = (fileUrl) => {
     setShowPdfReader(true)
@@ -72,6 +77,7 @@ const BookPreviewBottomSheet = ({navigation, showBookPreview, handleToggleBookPr
                       isLoadingPdf && showPdfReader && (<Text>Please wait while we are loading the file...</Text>)
                     }
                   </View>
+                  
                   <View style={{flex: 1, height: 700, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                     <PDFReader
                         source={{

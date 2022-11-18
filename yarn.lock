@@ -3143,6 +3143,11 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
+base-64@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/base-64/-/base-64-0.1.0.tgz#780a99c84e7d600260361511c4877613bf24f6bb"
+  integrity sha512-Y5gU45svrR5tI2Vt/X9GPd3L0HNIKzGu202EjxrXMpuc2V2CiKgemAbUUsqYmZJvPtCXoUKjNZwBJzsNScUbXA==
+
 base64-js@^1.0.2, base64-js@^1.1.2, base64-js@^1.2.3, base64-js@^1.3.1, base64-js@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
@@ -4185,6 +4190,11 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
+crypto-js@^3.2.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-3.3.0.tgz#846dd1cce2f68aacfa156c8578f926a609b7976b"
+  integrity sha512-DIT51nX0dCfKltpRiXV+/TVZq+Qq2NgF4644+K7Ttnla7zEzqc+kjJyiB96BHNyUTBxyjzRcZYpUdZa+QAqi6Q==
+
 crypto-random-string@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-1.0.0.tgz#a230f64f568310e1498009940790ec99545bca7e"
@@ -4688,6 +4698,11 @@ dot-prop@^5.2.0:
   integrity sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==
   dependencies:
     is-obj "^2.0.0"
+
+dotenv@^16.0.3:
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
+  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
 
 duplexer@^0.1.1:
   version "0.1.2"
@@ -9240,6 +9255,14 @@ react-native-animatable@1.3.3:
   dependencies:
     prop-types "^15.7.2"
 
+react-native-blob-util@0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/react-native-blob-util/-/react-native-blob-util-0.16.0.tgz#175299992d4db3b788bd6cf8545fc42a2917b544"
+  integrity sha512-Ouyvw3ObMikEK5c2BW5WvcAsLmED7GuSm6CDmTPse0qTn43H3O8XL3kZEmrf2A4w1QoSvhy8v0IuADm/kaLTcg==
+  dependencies:
+    base-64 "0.1.0"
+    glob "^7.1.6"
+
 react-native-btr@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/react-native-btr/-/react-native-btr-2.2.0.tgz#6f273f610a0a2ecee8461b131a6ba963293556a7"
@@ -9258,6 +9281,13 @@ react-native-codegen@^0.70.6:
     flow-parser "^0.121.0"
     jscodeshift "^0.13.1"
     nullthrows "^1.1.1"
+
+react-native-dotenv@^3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-dotenv/-/react-native-dotenv-3.4.2.tgz#75b61ee8691af5e0897a4db21f4145080fca7da3"
+  integrity sha512-O3ta0vSUmOp2hRG1uSiSz+mpagTMKzQ9LAzBDKDO0Zbd0BCBsE+p3PLTkVBzl0XGqExdCGyh/VwQeSsxpTiITA==
+  dependencies:
+    dotenv "^16.0.3"
 
 react-native-gradle-plugin@^0.70.3:
   version "0.70.3"
@@ -9285,6 +9315,13 @@ react-native-paper@^4.12.5:
     "@callstack/react-theme-provider" "^3.0.7"
     color "^3.1.2"
     react-native-iphone-x-helper "^1.3.1"
+
+react-native-pdf@6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/react-native-pdf/-/react-native-pdf-6.5.0.tgz#3418c9a3a95aa6a52463093f242ea3f5d943a5d7"
+  integrity sha512-R/RNF+/nhFXBkhrdAWLQRhtg9xcZkq/3wC+wq9lA+ORgn1sx+6VDtU7hWnY047FK0FRG8REUj4jILVSdpG2zDg==
+  dependencies:
+    crypto-js "^3.2.0"
 
 react-native-radio-buttons-group@^2.2.11:
   version "2.2.11"
